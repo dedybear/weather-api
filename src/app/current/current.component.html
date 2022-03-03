@@ -1,0 +1,34 @@
+<h2>Current Weather for {{name}}</h2>
+
+{{date}}
+
+<div class="flex">
+  <div *ngIf="icon != ''" class="image f1">
+    <img [src]="icon" [alt]="weatherLabel">
+  </div>
+  <div class="f3">
+    <div class="larger">{{weatherLabel}}</div>
+    <div class="flex">
+      <div class="f1 margin" *ngIf="tempMin != null">
+        Min Temp: {{tempMin}}&deg;
+      </div>
+      <div class="currentTemp f1 margin" *ngIf="temp != null">
+        Temperature: {{temp}}&deg;
+      </div>
+      <div class="f1 margin" *ngIf="tempMax != null">
+        Max Temp: {{tempMax}}&deg;
+      </div>
+    </div>
+    <div class="flex">
+      <div class="f1 margin" *ngIf="feelsLike != null">
+        Feels Like: {{feelsLike}}&deg;
+      </div>
+      <div class="f1 margin" *ngIf="humidity != null">
+        Humidity: {{humidity}}&deg;
+      </div>
+      <div class="f1 margin" *ngIf="pressure != null">
+        Pressure: {{pressure}}&deg;
+      </div>
+    </div>
+  </div>
+</div>

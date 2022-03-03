@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+
+  a {
+    display: inline-block;
+    flex: 1;
+    color: #000;
+    margin-left: 16px;
+  }
+
+  a:first-child {
+    margin-left: 0;
+  }
+}

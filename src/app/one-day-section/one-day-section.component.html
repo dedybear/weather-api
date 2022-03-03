@@ -1,0 +1,13 @@
+<div>
+  <div class="flex center90">
+    <div class="f1  margin">
+      {{time}}
+    </div>
+    <div class="currentTemp f1 margin" *ngIf="temp != null">
+      {{temp}}&deg;
+    </div>
+    <div *ngIf="icon != ''" class="image f1">
+      <img [src]="icon" [alt]="weatherLabel">
+    </div>
+  </div>
+</div>

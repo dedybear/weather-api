@@ -1,0 +1,29 @@
+
+@import '../../assets/scss/theme.scss';
+
+.larger {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.flex.center90 {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px dotted $lightGray;
+}
+
+.flex .f1 {
+  padding-top: 16px;
+  text-align: center;
+}
+
+.flex .f1.image {
+  padding-top: 0;
+}
+
+.image img {
+  max-height: 50px;
+  max-width: 50px;
+}

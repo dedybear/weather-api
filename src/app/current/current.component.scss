@@ -1,0 +1,34 @@
+@import '../../assets/scss/theme.scss';
+
+.flex {
+  .margin {
+    margin: 4px 8px;
+    min-width: 128px;
+    text-align: center;
+  }
+
+  .margin:first-child {
+    margin-left: 0;
+  }
+}
+
+.image {
+  border: 1px solid $gray;
+  border-radius: $borderRadius;
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+}
+
+
+@media (max-width:729px) {
+  .flex .margin:last-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width:510px) {
+  .flex .margin {
+    margin-left: 0;
+  }
+}

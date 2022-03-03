@@ -1,0 +1,23 @@
+<ng-container *ngIf="!isLocationFound; else found">
+  <form [formGroup]="locationForm">
+    <div class="location-form">
+      <mat-form-field>
+        <mat-label>Postal Code</mat-label>
+        <input matInput formControlName="postal_code">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="addZipCode()" aria-label="Start New Order">
+        Check my forecast
+      </button>
+    </div>
+  </form>
+</ng-container>
+<ng-template #found>
+  <div class="menu">
+    <a [routerLink]="['/current']" routerLinkActive="selected">Current Forcast</a>
+    <a [routerLink]="['/5day']" routerLinkActive="selected">5-Day Forcast</a>
+    <a [routerLink]="['/check']" routerLinkActive="selected">Rain Check</a>
+  </div>
+  <div class="content-area">
+    <router-outlet></router-outlet>
+  </div>
+</ng-template>

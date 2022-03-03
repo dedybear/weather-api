@@ -1,0 +1,6 @@
+<h2>Should I bring my umbrella</h2>
+
+<h3 *ngIf="bringUmbrella; else dontBring">You will need an umbrella</h3>
+<ng-template #dontBring>
+  You're in the clear.
+</ng-template>

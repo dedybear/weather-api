@@ -1,0 +1,2 @@
+<h2>Your 5-Day Forecast for {{name}}</h2>
+<app-one-day *ngFor="let item of dailyMap; let i = index" [date]="item" [data]="daily[i]"></app-one-day>
